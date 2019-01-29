@@ -3,9 +3,9 @@ Java project to simulate airplane traffic using google unfolding maps
 
 
 
- 
 
-This is a java based project for the Coursera Object Oriented Programming in Java Course. The project creates airplaneMarkers that constantly updated their position simmulating airplane flights from selected locations (airports). The program receives as a parameter the number of airplanes to simulate and randomly selects destinations for each airplane. The airplanes constanly move from one location to the other and depending on the direction of the trip (nort - south) or (south - north) the marker changes so that the airplane always faces his destination. Finally when one hovers on top of an airplane you see the airport where it started its flight and where it will end. And when one clicks on the airplane you see the trajectory line and the two airports as markers. Taking andvantage of the draw method and that it is updated constantly, when the map is rendered you see airplanes in motion.
+
+This is a java based project for the Coursera Object Oriented Programming in Coursera. The project creates airplaneMarkers that constantly updated their position simmulating airplane flights from selected locations (airports). The program receives as a parameter the number of airplanes to simulate and randomly selects destinations for each airplane. The airplanes constanly move from one location to the other and depending on the direction of the trip (nort - south) or (south - north) the marker changes so that the airplane always faces his destination. Finally when one hovers on top of an airplane you see the airport where it started its flight and where it will end. And when one clicks on the airplane you see the trajectory line and the two airports as markers. Taking andvantage of the draw method and that it is updated constantly, when the map is rendered you see airplanes in motion.
 For the implementation I first created a class that extends SimpleLinesMarker for the trajectory. This uses two coordinates instead of the simple point marker that uses only one.
 
 Then I created a brand new Airplane Marker class for each airplane that based on the beginning and end locations, constantly updates its location . The draw method on the airplane class was conditional on the direction of the plane.
