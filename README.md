@@ -1,9 +1,7 @@
 # jav-air-traffic-simulator
 Java project to simulate airplane traffic using google unfolding maps
 
-
-
-
+![atpimg](https://user-images.githubusercontent.com/19597283/51938530-5016eb00-23db-11e9-86df-a1097f9dc5fc.png)
 
 This is a java based project for the Coursera Object Oriented Programming in Coursera. The project creates airplaneMarkers that constantly updated their position simmulating airplane flights from selected locations (airports). The program receives as a parameter the number of airplanes to simulate and randomly selects destinations for each airplane. The airplanes constanly move from one location to the other and depending on the direction of the trip (nort - south) or (south - north) the marker changes so that the airplane always faces his destination. Finally when one hovers on top of an airplane you see the airport where it started its flight and where it will end. And when one clicks on the airplane you see the trajectory line and the two airports as markers. Taking andvantage of the draw method and that it is updated constantly, when the map is rendered you see airplanes in motion.
 For the implementation I first created a class that extends SimpleLinesMarker for the trajectory. This uses two coordinates instead of the simple point marker that uses only one.
